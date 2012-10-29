@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>BoardHood</title>
+    
+    <meta name="description" content="" />
+    <meta name="author" content="Maycon Bordin" />
+
+    <link href="fonts/stylesheet.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    
+    <script src="js/raphael-min.js"></script>
+    <script src="js/g.raphael-min.js"></script>
+    <script src="js/g.pie-min.js"></script>
+    <script src="js/g.line-min.js"></script>
+    
+    <script src="js/jquery-1.7.2.min.js"></script>
+    
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+        
+    });
+    </script>
+</head>
+    <body>
+        <div id="impress">
+            <div id="cover" class="step" data-x="-1000" data-y="-1500">
+                <h1>Desenvolvimento de uma Rede Social Baseada em Geolocalização</h1>
+                <h2>Maycon Bordin</h2>
+                <h3>Professor Orientador: M. Sc. Claudio Schepke</h3>
+                <img src="img/setrem.png" />
+            </div>
+            
+            <!-- REDES SOCIAIS -->
+            <div id="redes-sociais" class="step center" data-x="2000" data-y="-1500">
+                <h1 class="extra">Redes Sociais</h1>
+            </div>
+            
+            <div id="redes-sociais-1" class="step center" data-x="2000" data-y="0">
+                <img height="760" src="img/social-network.svg"></img>
+            </div>
+
+            <!-- SOCIAL SOFTWARE -->
+            <div id="social-software" class="step center" data-x="2000" data-y="-2100" data-z="-100" data-scale="2">
+                <h1 class="extra">Social Software</h1>
+                <p id="blog">Blogs</p>
+                <p id="podcasts">Podcasts</p>
+                <p id="social-bookmarking">Social Bookmarking</p>
+                <p id="wikis">Wikis</p>
+            </div>
+            
+            <div id="social-software-1" class="step center" data-x="3500" data-y="-2100" data-rotate="30">
+                <h1 class="extra">Compartilhamento</h1>
+            </div>
+            
+            <div id="social-software-2" class="step center" data-x="3800" data-y="-2150" data-rotate="60">
+                <h1 class="extra">Colaboração</h1>
+            </div>
+            
+            <div id="social-software-3" class="step center" data-x="4000" data-y="-2100" data-rotate="90">
+                <h1 class="extra">Reuso</h1>
+            </div>
+            
+            <div id="social-software-4" class="step center" data-x="4280" data-y="-2100" data-rotate="120">
+                <h1 class="extra">e modificação de conteúdo</h1>
+            </div>
+            
+            <div id="social-software-5" class="step center" data-x="2000" data-y="-2100" data-z="-100" data-scale="2">
+                
+            </div>
+            
+            <!-- MESSAGE BOARDS -->
+            <div id="message-boards" class="step center" data-x="3000" data-y="-1500">
+                <h1 class="large">Fóruns</h1>
+            </div>
+            
+            <div id="message-boards-1" class="step full-step" data-x="4000" data-y="-1500">
+                <p class="gray large">Popular na <span class="orange italic">Web 1.0</span></p>
+            </div>
+            
+            <div id="message-boards-2" class="step center" data-x="3800" data-y="0" data-scale="2">
+                <h1 class="large">Categorias</h1>
+            </div>
+            
+            <div id="message-boards-3" class="step center" data-x="3800" data-y="300" data-scale="1">
+                <h1 class="large">Tópicos</h1>
+            </div>
+            
+            <div id="message-boards-4" class="step center" data-x="3800" data-y="600">
+                <h1 class="large">Discussões</h1>
+            </div>
+            
+            <div id="message-boards-5" class="step center" data-x="5200" data-y="600" data-rotate="90">
+                <h1 class="xlarge">Comunidade</h1>
+            </div>
+            
+            <div id="message-boards-6" class="step center" data-x="5800" data-y="600" data-rotate="90" data-scale="2">
+                <h1 class="xlarge">Interesses</h1>
+            </div>
+            
+            <div id="message-boards-7" class="step center" data-x="4600" data-y="600" data-rotate="90" data-scale="2">
+                <h1 class="xlarge">Objetivos</h1>
+            </div>
+            
+            <div id="message-boards-8" class="step center" data-x="5200" data-y="600" data-rotate="90" data-scale="2">
+            
+            </div>
+            
+            <div id="message-boards-9" class="step center" data-x="6800" data-y="600">
+                <p class="large orange">redes sociais</p>
+                <p class="large">x</p>
+                <p class="large orange">fóruns</p>
+            </div>
+            
+            
+            <!-- HISTÓRIA REDES SOCIAIS -->
+            <div id="friendster" class="step" data-x="8000" data-y="0">
+                <img height="120" src="img/friendster.svg"></img>
+            </div>
+            
+            <div id="myspace" class="step" data-x="9300" data-y="0">
+                <img height="200" src="img/myspace.svg"></img>
+            </div>
+            
+            <div id="facebook" class="step" data-x="10400" data-y="0">
+                <img height="300" src="img/facebook.png"></img>
+            </div>
+            
+            <div id="foruns-desaparecendo" class="step" data-x="11400" data-y="0" data-rotate="-90">
+                <p class="italic" style="padding-top:500px;">Por outro lado, fóruns foram desaparecendo aos poucos...</p>
+            </div>
+            
+            <div id="foruns-defeitos-1" class="step" data-x="11400" data-y="1000" data-rotate="30">
+                <p class="bold gray">Seja pela ascenção das redes sociais</p>
+            </div>
+            
+            <div id="foruns-defeitos-2" class="step" data-x="11200" data-y="1200" data-rotate="60">
+                <p class="bold gray">pela incapacidade de evoluírem</p>
+            </div>
+            
+            <div id="foruns-defeitos-3" class="step" data-x="10900" data-y="1280" data-rotate="90">
+                <p class="bold gray">ou simplesmente por terem saído de moda</p>
+            </div>
+            
+            <div id="o-fato-e" class="step full-step" data-x="10900" data-y="2000" data-rotate="-180">
+                <p class="extra gray">Entretanto, a necessidade humana de criar e participar de <span class="bold-italic orange">comunidades</span> não desapareceu</p>
+            </div>
+            
+            <div id="o-objetivo" class="step" data-x="9000" data-y="2000" data-rotate="-180">
+                <p class="extra gray">O que remete ao objetivo deste trabalho:</p>
+            </div>
+            
+            <div id="o-objetivo-1" class="step" data-x="8700" data-y="1500" data-rotate="-180">
+                <p class="gray">Desenvolver um serviço que permita a criação de comunidades, utilizando conceitos das redes sociais</p>
+            </div>
+            
+            
+            <!-- O SERVIÇO -->
+            <div id="resolver-problemas" class="step" data-x="7000" data-y="1500" data-rotate="-180">
+                <p class="gray">Resolvendo alguns dos problemas existentes em fóruns...</p>
+            </div>
+            <div id="multiple-ids" class="step center" data-x="5900" data-y="2000" data-rotate="-180">
+                <h1 id="multiple-ids-title">Múltiplas contas</h1>
+                <img src="img/multiple-ids.svg" height="500" />
+            </div>
+            
+            <div id="follow-interests" class="step center" data-x="4900" data-y="2000" data-rotate="-180">
+                <h1 id="multiple-ids-title">Uma conta - vários interesses</h1>
+                <img src="img/follow-interests.svg" height="500" />
+            </div>
+            
+            <div id="notifications" class="step center" data-x="3800" data-y="2000" data-rotate="-180">
+                <h1>Verificar respostas a posts significa logar em cada uma das contas, e encontrar cada um dos posts...</h1>
+            </div>
+            
+            <div id="notifications-2" class="step center" data-x="2800" data-y="2000" data-rotate="-180">
+                <img src="img/notifications.svg" height="600" />
+            </div>
+            
+            <div id="filter-conversations" class="step center" data-x="1800" data-y="2000" data-rotate="-180">
+                <h1 id="filter-conversations-title">Como filtrar conversas?</h1>
+                <img src="img/information-overload.jpg" height="600" />
+            </div>
+            
+            <div id="geolocation" class="step center white-bg" data-x="500" data-y="2000" data-rotate="-180">
+                <h1 id="geolocation-title">Geolocalização</h1>
+                <img src="img/geolocation.jpg" height="600" />
+            </div>
+            
+            <div id="geolocation-map" class="step center" data-x="-1000" data-y="2000" data-rotate="-180">
+                <img src="img/maps.jpg" height="800" />
+            </div>
+            
+            <div id="popularity" class="step white-bg" data-x="-2500" data-y="2000" data-rotate="-180">
+                <h1 id="popularity-title" class="large left">Popularidade</h1>
+                <p class="left">Ordenar conversas de acordo com a popularidade, balanceando a quantidade de <span class="orange">respostas</span> e a <span class="orange">data de criação</span>.</p>
+                <img src="img/popularity.svg" height="200" />
+            </div>
+            
+            
+            <!-- MOBILE -->
+            <div id="platform" class="step center" data-x="3800" data-y="3500">
+                <h1 class="large">Plataforma</h1>
+                <img src="img/desktop.svg" height="200" />
+                <img src="img/smartphone.svg" height="200" />
+            </div>
+            
+            <div id="mobile-stats" class="step large-screen" data-x="5000" data-y="10500" data-scale="25">
+                <p class="large">Existem mais de <span class="orange">4 bilhões</span> de telefones celulares no mundo</p>
+            </div>
+            
+            <div id="mobile-stats-2" class="step large-screen center" data-x="13100" data-y="9100">
+                <p class="xlarge"><span class="orange">27%</span> destes são smartphones</p>
+            </div>
+            
+            <div id="mobile-stats-3" class="step large-screen center" data-x="7500" data-y="3500">
+                <h1 class="orange xlarge">2014</h1>
+                <p class="bold">Internet móvel <span class="greater large orange">&gt;</span> Internet Desktop</p>
+            </div>
+            
+            <div id="native-vs-web" class="step center" data-x="8600" data-y="3500">
+                <p class="gray extra">Aplicações Nativas</p>
+                <p class="bold extra orange">vs</p>
+                <p class="gray extra">Web Móvel</p>
+            </div>
+            
+            <div id="sos" class="step center" data-x="9800" data-y="3500">
+                <h1 class="large">Sistemas Operacionais</h1>
+            </div>
+            
+            <div id="mobile" class="step" data-x="29800" data-y="3500" data-scale="22">
+                <h1 class="center">Mobile Market Share (EUA - 2012)</h1>
+                <div id="apple-vs-google" style="height: 600px;"></div>
+
+                <h1 id="mobile-apple">iOS</h1>
+                <h1 id="mobile-google">Android</h1>
+                <h1 id="mobile-blackberry">BlackBerry</h1>
+                <h1 id="mobile-microsoft">Windows Phone</h1>
+                <h1 id="mobile-symbian">Symbian</h1>
+                <script>
+                $(document).ready(function() {
+                     var r = Raphael("apple-vs-google");
+                     r.piechart(320, 350, 250, [31.4, 50.8, 11.6, 4.0, 1.3], {colors:["#99CC00","#797979", "#0098DE", "#E61C09"]});
+                });
+                </script>
+            </div>       
+            
+            <div id="mobile-choice" class="step" data-x="29700" data-y="3045" data-rotate="90">
+                <p class="bold">Aplicações escritas em Java</p>
+            </div>
+            
+            <div id="mobile-choice-2" class="step" data-x="29600" data-y="3045" data-rotate="90">
+                <p class="bold">Plataformas suportadas pelas ferramentas de desenvolvimento</p>
+            </div>
+            
+            
+            <!-- API -->
+            <div id="api" class="step center" data-x="6000" data-y="-1500">
+                <h1 class="xlarge">API</h1>
+            </div>
+            
+            <div id="restful" class="step center" data-x="7000" data-y="-1500">
+                <h1 class="xlarge">REST<span class="orange">ful</span></h1>
+            </div>
+            
+            <div id="python" class="step center" data-x="8100" data-y="-1500">
+                <img src="img/python.svg" height="280" />
+            </div>
+            
+            <div id="flask" class="step center" data-x="9200" data-y="-1500">
+                <img src="img/flask.svg" height="280" />
+            </div>
+            
+            <div id="auth" class="step center" data-x="10200" data-y="-1500">
+                <h1 class="large">Autenticação</h1>
+            </div>
+            
+            <div id="auth-1" class="step center" data-x="11200" data-y="-1500">
+                <img src="img/auth1.svg" height="300" />
+            </div>
+            
+            <div id="auth-2" class="step center" data-x="12200" data-y="-1500">
+                <img src="img/auth2.svg" height="240" />
+            </div>
+            
+            <div id="auth-3" class="step center" data-x="13400" data-y="-1500">
+                <img src="img/auth3.svg" height="400" />
+            </div>
+            
+            <div id="auth-4" class="step center" data-x="14600" data-y="-1500">
+                <img src="img/auth.svg" height="400" />
+            </div>
+            
+            <div id="oauth" class="step center" data-x="15800" data-y="-1500">
+                <img src="img/oauth.svg" height="550" />
+            </div>
+            
+            
+            <div id="database" class="step center" data-x="17000" data-y="-1500" data-rotate="90">
+                <h1 class="large">Banco de Dados</h1>
+            </div>
+            
+            <div id="database-options" class="step center" data-x="17000" data-y="-500" data-rotate="90">
+                <div class="option relacionais">
+                    <img src="img/mysql.svg" height="200" />
+                    <img src="img/postgresql.svg" height="200" />
+                </div>
+                
+                <div class="option nosql">
+                    <img src="img/solr.svg" height="200" />
+                    <img src="img/couchdb.svg" height="200" />
+                    <img src="img/mongodb.png" height="200" />
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <!-- CLOUD -->
+            <div id="cloud-computing" class="step center" data-x="18000" data-y="-1500">
+                <img src="img/cloud.svg" />
+                <h1 id="cloud-computing-title" class="extra">Cloud Computing</h1>
+            </div>
+            
+            <div id="aws" class="step center" data-x="19200" data-y="-1500">
+                <img src="img/aws.svg" height="300" />
+            </div>
+            
+            <div id="infra" class="step center" data-x="20400" data-y="-1500">
+                <h1>Infraestrutura</h1>
+                <img src="img/infra.svg" height="500" />
+            </div>
+            
+            <div id="deploy" class="step center" data-x="20400" data-y="-2800">
+                <h1 class="bold large">Deploy</h1>
+                <img src="img/deploy.svg" height="300" />
+            </div>
+            
+            <div id="deploy-git" class="step center" data-x="20400" data-y="-4000">
+                <img src="img/deploy-git.svg" height="300" />
+            </div>
+            
+            <div id="deploy-fabric" class="step center" data-x="20400" data-y="-5200">
+                <h1 class="bold xlarge">Distribute<br /><span class="orange">+</span><br />Fabric</h1>
+            </div>
+            
+            
+            <!-- APLICAÇÃO -->
+            <div id="app" class="step center" data-x="21600" data-y="-5200">
+                <img src="img/android.png" height="800" />
+                <img class="screen" src="img/screens/1.png" height="598" />
+                
+                <div class="control">
+                    <a class="play" href="#app" title="Play/Pause">Play</a>
+                    <a class="reset" href="#app" title="Reset">Reset</a>
+                </div>
+                
+                <div class="progress"></div>
+                <div class="total"></div>
+                
+                <p class="count">0%</p>
+                <script>
+                    $(document).ready(function() {
+                        var playing = false
+                          , max = 384
+                          , current = 1
+                          , intervalId = null;
+                          
+                        function nextScreen() {
+                            current++;
+                            if (current == max) current = 1;
+                            
+                            $("#app .screen").attr("src", "img/screens/"+current+".png");
+                            
+                            var p = Math.round((current*100)/max);
+                            $("#app .count").html(p + "%");
+                            
+                            var w = (900*p)/100;
+                            $("#app .progress").css({'width': w + 'px'});
+                        }
+                        
+                        $("#app .play").click(function() {
+                            if (!playing) {
+                                $(this).html("Pause");
+                                playing = true;
+                                
+                                intervalId = setInterval(nextScreen, 350);
+                            } else {
+                                $(this).html("Play");
+                                playing = false;
+                                clearInterval(intervalId);
+                            }
+                        });
+                        
+                        $("#app .reset").click(function() {
+                            current = 1;
+                            $("#app .screen").attr("src", "img/screens/1.png");
+                            $("#app .count").html("0%");
+                            $("#app .progress").css({'width':'0px'});
+                        });
+                    });
+                </script>
+            </div>
+            
+            
+            <!-- CONCLUSÃO -->
+            <div id="conclusion" class="step center" data-x="20400" data-y="-6400">
+                <h1 class="bold large">Conclusão</h1>
+            </div>
+            
+            
+            <div id="site" class="step center" data-x="21600" data-y="-6400">
+                <h1 class="bold large"><span class="orange">boardhood</span>.com</h1>
+            </div>
+            
+            
+        </div>
+
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+    </body>
+</html>
